@@ -24,3 +24,43 @@ User authentication
 Acknowledgements 
 Pictures sourced from various photo websites
 Fonts from google
+
+
+Changelog
+Added
+-created css(index)for homepage styling
+-created css(become)for vendor application page 
+-created css(book)for browse stallspage 
+-created css(community)for community groups page
+-created css(news&about)for news,events &contact page
+Responsive design Implementation
+-added mobile first media queries for all pages
+- implemented hamburger meny for mobile navigation
+- created flexible grid layout for different screen sizes 
+Modern ui 
+Hero sections with background images on all pages
+Card based layput 
+Hoer effect and smooth organization 
+Improved typography and font
+Imteractive features
+Hamburger
+Product card hover
+Button hover 
+Smooth scrolling 
+Visual enhancements 
+Box shadow
+Rounded corners 
+Professional colour scheme
+Changed
+Nav system
+Content layout
+Typography
+Form styling 
+Fixed 
+Mobile responsiveness issue
+Cross browser compatabiity
+Content display issue
+Improved 
+User experience 
+Code structure
+
