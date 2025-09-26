@@ -63,4 +63,4 @@ Content display issue
 Improved 
 User experience 
 Code structure
-
+Added pictures to both news and events and index html codes
