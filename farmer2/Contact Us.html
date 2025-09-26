@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="stylesheet" href="CSS/news&about.css">
+
+
+    <title>Contact Us - Munch & Makers Farmers Market</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-text">M&M</div>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home Page</a></li>
+                    <li class="nav-item"><a href="About Us.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="Browse our stalls.html" class="nav-link">Browse our stalls</a></li>
+                    <li class="nav-item"><a href="Community & Groups.html" class="nav-link">Community & groups </a></li>
+                    <li class="nav-item"><a href="News & Events.html" class="nav-link">News & Events</a></li>
+                    <li class="nav-item"><a href="Become a vendor.html" class="nav-link">Become a Vendor</a></li>
+                    <li class="nav-item"><a href="Contact Us.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#" class="cart-link">
+                <span class="cart-icon">🛒</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+           <section class="cards-section">
+            <h1>Get in Touch with Munch & Makers Farmers Market</h1>
+            <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out using the options below.</p>
+
+            <div class="contact-form">
+                <h2>Our Contact Information</h2>
+                <div>
+                    <h3>General Enquiries:</h3>
+                    <p>Email: <a href="mailto:info@munchandmakers.com">info@munchandmakers.com</a></p>
+                    <p>Phone: <a href="tel:+27674412434">+27 67 441 2434</a></p>
+                </div>
+                <div>
+                    <h3>Vendor Support:</h3>
+                    <p>Email: <a href="mailto:vendors@munchandmakers.com">vendors@munchandmakers.com</a></p>
+                    <p>Phone: <a href="tel:+27674412434">+27 67 441 2434</a></p>
+                </div>
+                <div>
+                    <h3>Market Operating Hours:</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Saturday: 9:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="/submit-contact-form" method="POST">
+                    <p>
+                        <label for="name">Your Name:</label><br>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Your Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="subject">Subject:</label><br>
+                        <input type="text" id="subject" name="subject" required>
+                    </p>
+                    <p>
+                        <label for="message">Your Message:</label><br>
+                        <textarea id="message" name="message" rows="8" required></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Send Message</button>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: info@munchmakers.co.za</p>
+                <p>Phone: +27 67 441 2434</p>
+                <p>Address: Braamfontein Centre, 23 Jorissen St, Johannesburg, 2017, South Africa</p>
+            </div>
+            <div>
+                <h3>Find Us</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.544061877963!2d28.033103415006096!3d-26.19166698348301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c4625b59f33%3A0x633d4e0e572099c2!2sRosebank%20College%20Braamfontein!5e0!3m2!1sen!2sza!4v1678280000000!5m2!1sen!2sza" width="250" height="150" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p>Rosebank College Braamfontein</p>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest news and events!</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div>
+                <h3>Join Us</h3>
+                <a href="#">Become a vendor</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 ST10469592 Munch & Makers Farmers Market. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const navList = document.getElementById('navList');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
