@@ -64,3 +64,32 @@ Improved
 User experience 
 Code structure
 Added pictures to both news and events and index html codes
+part 3 # Project Title: Munch & Makers Farmers Market Website
+
+This is a website project for web dev, featuring HTML, CSS, and JavaScript for a farmers market platform. Part 3 includes enhancements to the "Become a Vendor" page for consistency, bug fixes, and advanced JS functionalities like cart counting and form validations.
+
+- Responsive design with mobile-friendly layouts.
+- Interactive elements: Hamburger menus, lightboxes, search filters.
+- Form validations and dynamic cart system.
+- Google Maps integration for location-based features.
+
+- HTML5, CSS3, JavaScript (Vanilla JS).
+- Google Maps API for interactive maps.
+
+Changelog
+- Enhancements: Updated “Become a Vendor” Page Layout and Styling
+- Updated the “Become a Vendor” page layout and styling to exactly match the homepage for visual consistency. Banner height increased to match homepage (75vh / min 500px), with full-width, responsive, tall background image and dark overlay. Center-aligned all banner text vertically and horizontally. Center-aligned all section content below the banner. Changed navbar on “Become a Vendor” page to exactly match homepage structure: MM logo circle identical in size, color, and spacing. Navigation links aligned and spaced consistent with homepage. Cart icon style and placement unified. Improved fonts, colors, margins, and padding for consistent visual style across pages. Enhanced mobile responsiveness: Hamburger menu behavior consistent. Banner and text scale appropriately on small screens. Form layouts stack vertically on mobile for better usability. These changes improve user experience and design coherence, addressing feedback on layout inconsistencies.
+
+- Fixed misalignment issues on the vendor page banner and navbar. Resolved uneven spacing and layout inconsistencies between homepage and vendor page. This ensures a polished, error-free interface, improving usability and meeting feedback on visual bugs.
+-  Become a vendor.html, CSS files.
+
+- Implemented comprehensive JavaScript enhancements across all website pages (About Us, Become a Vendor, Browse Our Stalls, Community & Groups, Contact Us, News & Events, and Index/Home) to add interactive elements, form validation, and dynamic features. This includes hamburger menu toggles for mobile responsiveness, client-side form validation with error messages for contact and vendor forms, AJAX-style form submissions with email compilation via mailto links, gallery lightboxes for image viewing, search/filter functionality for products, dynamic content loading (e.g., "Load More Products" button with popup messages), animations (fade-ins and transitions), and interactive maps using Google Maps API. These changes improve user experience by making the site more engaging and functional, addressing feedback on interactivity and form handling. No external libraries were used except for Google Maps API on relevant pages.
+-  js/about.js, js/vendor.js, js/stalls.js, js/community.js, js/contact.js, js/news.js, js/index.js; HTML files for script linking.
+
+-  Added cart counting functionality that increments a persistent counter (stored in localStorage) when "Add to Basket" buttons are clicked on the Browse Our Stalls page, displaying a badge (e.g., 🛒 (3)) next to the cart icon across all pages. Fixed newsletter form submission to prevent page jumps, validate email inputs, and show a popup message ("Email address received") instead of reloading the page. This resolves user experience issues with jumping and provides immediate feedback, enhancing usability and meeting requirements for dynamic content and form processing.
+-: All js/*.js files (newsletter and cart code added to each); CSS files for cart badge styling.
+
+-Modified CSS to center-align the "upcoming artisans" sections (`.coming-soon-card` and `.coming-soon-image-card`) on the Browse Our Stalls page using `margin: 0 auto` and `text-align: center` for better visual balance. Added custom styling for the search input and "Load More Products" button to match the site's design (e.g., center-alignment, rounded corners, colors), ensuring consistency with "Add to Basket" buttons. Also included cart badge CSS for the counter display. These changes improve mobile responsiveness and design coherence, addressing feedback on layout and aesthetics.
+- CSS/book.css (or equivalent); Browse our stalls.html for element classes.
+
+-  Resolved JavaScript redeclaration errors by providing complete, non-duplicated code for all pages. Ensured all scripts load without conflicts, and added fallback handling for forms and maps. Updated HTML headers where needed for hamburger menu elements. This improves code reliability and prevents runtime errors, contributing to a polished final product.
