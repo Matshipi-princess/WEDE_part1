@@ -123,7 +123,7 @@ body {
 }
 
 .hamburger-menu {
-    display: none;
+    display: none; /* Hidden on desktop */
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
@@ -133,6 +133,20 @@ body {
     width: 25px;
     height: 3px;
     background-color: var(--text-color);
+}
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.cart-link {
+    position: relative; /* Allows badge positioning */
 }
 
 .stalls-hero, .product-categories, .vendor-info-section, .vendor-forms, .faqs-section, .page-content, .upcoming-section {
@@ -358,7 +372,7 @@ footer a:hover {
 
 @media (max-width: 768px) {
       .main-nav {
-        display: none;
+        display: none; /* Hide the center navigation block on mobile */
     }
 
     .nav-list.active {
@@ -373,7 +387,7 @@ footer a:hover {
     }
     
     .hamburger-menu {
-        display: flex; 
+        display: flex; /* Show menu icon */
     }
     
     .logo-text {
@@ -381,6 +395,7 @@ footer a:hover {
         height: 40px;
     }
     
+    /* Layout adjustments */
     .hero-grid, .footer-content, .product-grid, .page-content ul {
         grid-template-columns: 1fr;
     }

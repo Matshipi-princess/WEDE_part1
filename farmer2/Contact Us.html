@@ -11,28 +11,33 @@
 <body>
 
     <header class="main-header">
-        <div class="header-container">
-            <a href="index.html" class="logo-link">
-                <div class="logo-text">M&M</div>
-            </a>
-            
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home Page</a></li>
-                    <li class="nav-item"><a href="About Us.html" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="Browse our stalls.html" class="nav-link">Browse our stalls</a></li>
-                    <li class="nav-item"><a href="Community & Groups.html" class="nav-link">Community & groups </a></li>
-                    <li class="nav-item"><a href="News & Events.html" class="nav-link">News & Events</a></li>
-                    <li class="nav-item"><a href="Become a vendor.html" class="nav-link">Become a Vendor</a></li>
-                    <li class="nav-item"><a href="Contact Us.html" class="nav-link">Contact Us</a></li>
-                </ul>
-            </nav>
-            
+    <div class="header-container">
+        <a href="index.html" class="logo-link">
+            <div class="logo-text">M&M</div>
+        </a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home Page</a></li>
+                <li class="nav-item"><a href="About Us.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="Browse our stalls.html" class="nav-link">Browse our stalls</a></li>
+                <li class="nav-item"><a href="Community & Groups.html" class="nav-link">Community & groups </a></li>
+                <li class="nav-item"><a href="News & Events.html" class="nav-link">News & Events</a></li>
+                <li class="nav-item"><a href="Become a vendor.html" class="nav-link">Become a Vendor</a></li>
+                <li class="nav-item"><a href="Contact Us.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
             <a href="#" class="cart-link">
                 <span class="cart-icon">🛒</span>
             </a>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <main>
            <section class="cards-section">
@@ -116,14 +121,8 @@
             <p>&copy; 2025 ST10469592 Munch & Makers Farmers Market. All rights reserved.</p>
         </div>
     </footer>
+        <script src="JavaScript/contact.js"></script>
 
-    <script>
-        const hamburgerMenu = document.getElementById('hamburgerMenu');
-        const navList = document.getElementById('navList');
-
-        hamburgerMenu.addEventListener('click', () => {
-            navList.classList.toggle('active');
-        });
-    </script>
+  
 </body>
 </html>

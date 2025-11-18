@@ -325,6 +325,7 @@ footer form button {
     width: 100%;
 }
 
+/* Stalls Page */
 .stalls-hero, .product-categories, .vendor-info-section, .vendor-forms, .faqs-section {
     max-width: 1200px;
     margin: 80px auto;
@@ -455,6 +456,41 @@ footer form button {
     text-decoration: none;
     font-size: 1rem;
 }
+/* Style for the search input - center-aligned, matches site design */
+.search-input {
+    display: block; /* Makes it a block element for centering */
+    margin: 10px auto; /* Centers horizontally, adds some vertical margin */
+    padding: 10px; /* Comfortable padding */
+    width: 80%; /* Responsive width, not full */
+    max-width: 400px; /* Prevents it from being too wide */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Readable font size */
+    text-align: center; /* Centers placeholder text */
+    background-color: #f9f9f9; /* Light background to match site */
+    color: #333; /* Text color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Style for the load more button - center-aligned, matches "Add to Basket" shape */
+.load-more-btn {
+    display: block; /* Block for centering */
+    margin: 20px auto; /* Centers horizontally */
+    padding: 10px 20px; /* Same padding as typical buttons */
+    background-color: #007bff; /* Example color - match your "Add to Basket" button */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners - same as "Add to Basket" */
+    font-size: 16px; /* Readable */
+    cursor: pointer; /* Pointer on hover */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.load-more-btn:hover {
+    background-color: #0056b3; /* Darker on hover - match your button's hover */
+}
+
 
 .coming-soon-card {
     background: var(--white);
@@ -493,6 +529,8 @@ footer form button {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
+/* Responsive */
 @media (max-width: 768px) {
     .header-container {
         flex-wrap: wrap;

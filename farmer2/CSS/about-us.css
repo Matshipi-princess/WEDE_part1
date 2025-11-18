@@ -1,3 +1,4 @@
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,16 +12,19 @@ body {
     line-height: 1.6;
 }
 
+/* Color Palette */
 :root {
-    --primary-color: #A37E83;
-    --secondary-color: #586B5A; 
-    --text-color: #332D2D; 
-    --light-text-color: #706868; 
-    --background-color: #F8F6F4; 
+    --primary-color: #A37E83; /* Dusty Rose - main accent */
+    --secondary-color: #586B5A; /* Olive Green - secondary accent */
+    --text-color: #332D2D; /* Dark Brown for main text */
+    --light-text-color: #706868; /* Lighter brown/gray for secondary text */
+    --background-color: #F8F6F4; /* Off-White for backgrounds */
     --white: #ffffff;
     --black: #000000;
 }
 
+
+/* Header styles */
 .main-header {
     background: var(--white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -40,6 +44,7 @@ body {
     height: 70px;
 }
 
+/* M&M Logo */
 .logo-link {
     display: flex;
     align-items: center;
@@ -62,6 +67,7 @@ body {
     font-size: 16px;
 }
 
+/* Navigation */
 .main-nav {
     flex: 1;
     display: flex;
@@ -104,6 +110,7 @@ body {
     width: 100%;
 }
 
+/* Header Icons (Cart & Hamburger) */
 .header-icons {
     display: flex;
     align-items: center;
@@ -131,6 +138,7 @@ body {
     color: var(--white);
 }
 
+/* Hamburger Menu */
 .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -157,6 +165,7 @@ body {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Hero Section */
 .hero-section {
     position: relative;
     height: 60vh;
@@ -202,6 +211,7 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
+/* Cards Section */
 .cards-section {
     max-width: 1200px;
     margin: 60px auto;
@@ -246,6 +256,8 @@ body {
     text-align: center;
     line-height: 1.7;
 }
+
+/* How It Works Section */
 .how-it-works-section {
     background: var(--background-color);
     padding: 60px 20px;
@@ -306,6 +318,7 @@ body {
     text-decoration: underline;
 }
 
+/* Our Stalls Section */
 .stalls-section {
     max-width: 1200px;
     margin: 80px auto;
@@ -348,6 +361,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for all images in the row */
 .image-row img:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
@@ -373,6 +387,7 @@ body {
     border-color: var(--secondary-color);
 }
 
+/* Discover More Section */
 .discover-section {
     background: var(--background-color);
     padding: 60px 20px;
@@ -411,6 +426,7 @@ body {
     color: var(--white);
 }
 
+/* Reviews Section (Updated) */
 .reviews-section {
     max-width: 1200px;
     margin: 80px auto;
@@ -460,6 +476,7 @@ body {
     line-height: 1.6;
 }
 
+/* Footer */
 footer {
     background: var(--secondary-color);
     color: var(--white);
@@ -545,6 +562,7 @@ footer a:hover {
     color: var(--white);
 }
 
+/* Mobile Responsive */
 @media (max-width: 768px) {
     .main-nav {
         display: none;

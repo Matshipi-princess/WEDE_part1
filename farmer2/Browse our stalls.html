@@ -39,6 +39,7 @@
     </header>
 
     <main>
+        <!-- Hero/Intro Section (styled like vendor hero but with image + text) -->
         <section class="stalls-hero">
             <div class="container">
                 <div class="hero-grid">
@@ -61,10 +62,12 @@
             </div>
         </section>
 
+        <!-- Product Categories Section (card-based like vendor info/forms) -->
         <section id="product-categories" class="product-categories">
             <div class="container">
                 <h2 class="section-title">Delicious Delights from Our Vendors</h2>
                 
+                <!-- Baked Goods, Street Food & Sweet Treats Category -->
                 <div class="category-group">
                     <h3 class="category-title">Baked Goods, Street Food & Sweet Treats</h3>
                     
@@ -123,17 +126,19 @@
                     </div>
                 </div>
 
+                <!-- Wearable Art & Fashion (Placeholder Card) -->
                 <div class="category-group coming-soon-card">
                     <h3 class="category-title">Wearable Art & Fashion</h3>
                     <p>Exciting new wearable art and fashion items are coming soon to our market! Keep an eye out for unique designs.</p>
                 </div>
 
+                <!-- Home & Lifestyle Decor -->
                 <div class="category-group">
                     <h3 class="category-title">Home & Lifestyle Decor</h3>
                     <div class="product-grid">
                         <div class="product-card">
                             <img src="Images/candles.jpg" alt="Hand-Crafted Scented Candles from Aura Aromas" width="320" height="320">
-                            <h5>Hand-Crafted Scented Candles</h5> 
+                            <h5>Hand-Crafted Scented Candles</h5> <!-- Fixed invalid tag -->
                             <span class="vendor">From Aura Aromas</span>
                             <a href="#add-candles" class="add-button">Shop Candles</a>
                         </div>
@@ -146,10 +151,12 @@
                     </div>
                 </div>
 
+                <!-- Coming Soon Image (Styled as Card) -->
                 <div class="coming-soon-image-card">
                     <img src="Images/coming1.jpg" alt="Upcoming Artisans Preview" width="320" height="320">
                 </div>
 
+                <!-- Cultural & Heritage Crafts (Placeholder) -->
                 <div class="category-group coming-soon-card">
                     <h3 class="category-title">Cultural & Heritage Crafts</h3>
                     <p>New cultural and heritage craft items are being added to our collection soon! Discover unique pieces celebrating local traditions.</p>
@@ -157,9 +164,10 @@
             </div>
         </section>
 
+        <!-- Upcoming Artisans Section (Simple Card) -->
         <section class="upcoming-section">
             <div class="container">
-                <div class="info-card"> 
+                <div class="info-card"> <!-- Reuse vendor-style card -->
                     <h3>Upcoming Artisans: Coming Soon!</h3>
                     <p>We're constantly expanding our market to bring you more unique products and talented vendors. Stay tuned for exciting new additions!</p>
                 </div>
@@ -167,7 +175,7 @@
         </section>
     </main>
 
-    <footer> 
+    <footer> <!-- Consistent with previous pages -->
         <div class="footer-content">
             <div>
                 <h3>Contact Us</h3>
@@ -193,20 +201,13 @@
                 <a href="Become a vendor.html">Become a Vendor</a>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 ST10469592 Munch & Makers Farmers Market. All rights reserved.</p> 
+                <p>&copy; 2025 ST10469592 Munch & Makers Farmers Market. All rights reserved.</p> <!-- Fixed typo -->
             </div>
         </div>
     </footer>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navList = document.querySelector('.nav-list');
-        const headerIcons = document.querySelector('.header-icons');
+   
+        <script src="JavaScript/browse-stalls.js"></script>
 
-        hamburger.addEventListener('click', () => {
-            navList.classList.toggle('active');
-            headerIcons.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* --- Core Styles & Resets --- */
 
 *{ margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -5,6 +6,8 @@ body {
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
 background: var(--background); color: var(--text); line-height: 1.6;
 }
+
+/* --- Color Palette --- */
 
 :root {
 --primary: #A37E83;
@@ -18,12 +21,17 @@ background: var(--background); color: var(--text); line-height: 1.6;
 --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
+/* --- Reusable Layouts & Transitions --- */
+
+/* Main Containers */
 .header-container, .cards-section, .how-it-works-container, .stalls-section, .reviews-section, .footer-content, main > section {
 max-width: 1200px; margin: 0 auto; padding: 0 20px;
 }
 
+/* Shared Transitions */
 a, button, .cart-link, .info-card, .review-card, .image-row img, .news-card img, .discover-btn, .shop-now-btn { transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
+/* Major Headings */
 h1 {
 font-size: 3rem;
 color: var(--secondary);
@@ -42,6 +50,8 @@ h3 {
 color: var(--primary);
 }
 
+/* --- Header & Nav --- */
+
 .main-header {
 background: var(--white); box-shadow: var(--shadow-light);
 position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #e0e0e0;
@@ -49,6 +59,7 @@ position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #e0e0e0;
 
 .header-container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
 
+/* Logo */
 .logo-link {
 display: flex; align-items: center; text-decoration: none;
 font: bold 28px sans-serif; color: var(--primary);
@@ -62,6 +73,7 @@ transform: rotate(0deg);
 .logo-link:hover .logo-text { transform: rotate(15deg) scale(1.05); }
 
 
+/* Navigation */
 .main-nav { flex: 1; display: flex; justify-content: center; }
 .nav-list { display: flex; list-style: none; gap: 40px; align-items: center; }
 
@@ -78,6 +90,7 @@ background: var(--primary); transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25,
 }
 .nav-link:hover::after { width: 100%; }
 
+/* Icons */
 .header-icons { display: flex; align-items: center; gap: 10px; }
 
 .cart-link {
@@ -92,8 +105,11 @@ color: var(--white);
 transform: scale(1.1) rotate(5deg);
 }
 
+/* Hamburger */
 .hamburger-menu { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
 .hamburger-menu .bar { width: 25px; height: 3px; background-color: var(--text); }
+
+/* --- Hero Section --- */
 
 .hero-section {
 position: relative; height: 60vh; min-height: 400px;
@@ -113,10 +129,13 @@ font: bold 3.5rem sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); margi
 }
 .hero-content p { font-size: 1.3rem; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); }
 
+/* --- Card Groups (Info & Review) --- */
+
 .cards-container, .reviews-container, .news-grid {
 display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;
 }
 
+/* Shared Card Base */
 .info-card, .review-card, .news-card {
 background: var(--white); border-radius: 15px; padding: 30px;
 box-shadow: var(--shadow-medium); border: 1px solid #e0e0e0;
@@ -134,6 +153,8 @@ margin-bottom: 15px; padding-bottom: 15px; border-bottom: 3px solid var(--primar
 
 .info-card p, .review-card p { color: var(--light-text); line-height: 1.7; }
 
+/* --- How It Works --- */
+
 .how-it-works-section { background: var(--background); padding: 60px 20px; text-align: center; }
 
 .steps-container {
@@ -147,9 +168,12 @@ display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-botto
 .faq-link { color: var(--primary); text-decoration: none; font-weight: 600; }
 .faq-link:hover { text-decoration: underline; }
 
+/* --- Stalls & Image Row --- */
+
 .stalls-section { margin: 80px auto; }
 .stall-category {
 margin-bottom: 60px;
+/* --- CENTER ALIGN BUTTON --- */
 text-align: center;
 }
 
@@ -166,6 +190,9 @@ box-shadow: var(--shadow-medium);
 transform: scale(1.05) translateY(-5px);
 box-shadow: var(--shadow-heavy);
 }
+
+
+/* Primary Button (Shop Now) */
 .shop-now-btn {
 display: inline-block; background: var(--primary); color: var(--white);
 padding: 12px 30px; border-radius: 25px; text-decoration: none;
@@ -176,6 +203,7 @@ background: var(--secondary); transform: translateY(-3px);
 box-shadow: 0 8px 20px rgba(0,0,0,0.2); border-color: var(--secondary);
 }
 
+/* --- Discover More --- */
 
 .discover-section { background: var(--background); padding: 60px 20px; margin-top: 80px; }
 .discover-buttons {
@@ -194,6 +222,8 @@ transform: translateY(-3px);
 box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* --- Reviews --- */
+
 .reviews-section { margin: 80px auto; }
 .review-card { display: flex; flex-direction: column; align-items: center; }
 
@@ -201,6 +231,7 @@ box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 .review-card .star-rating { font-size: 1.5rem; color: gold; margin-bottom: 15px; }
 .review-card p { font-style: italic; }
 
+/* --- Contact Page Specific Styles --- */
 .contact-form {
 max-width: 600px;
 margin: 40px auto;
@@ -268,6 +299,7 @@ transform: translateY(-3px);
 box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* --- News & Events Page Specific Styles --- */
 #upcoming-events, #news {
 padding-bottom: 40px;
 }
@@ -317,6 +349,7 @@ background-color: var(--light-text);
 margin: 40px 0;
 }
 
+/* --- Footer --- */
 
 footer { background: var(--secondary); color: var(--white); padding: 50px 20px 20px; margin-top: 80px; }
 .footer-content {
@@ -327,6 +360,7 @@ footer h3 { color: var(--background); margin-bottom: 20px; font-size: 1.3rem; }
 footer p { margin-bottom: 10px; line-height: 1.6; }
 footer iframe { border-radius: 8px; border: none; }
 
+/* Form/Input Group */
 footer form { display: flex; gap: 10px; margin-top: 15px; }
 footer input[type="email"] {
 flex: 1; padding: 12px; border: none; border-radius: 5px;
@@ -352,8 +386,10 @@ text-align: center; padding-top: 20px;
 border-top: 1px solid rgba(255, 255, 255, 0.1); color: var(--white);
 }
 
-@media (max-width: 768px) {
+/* --- Mobile Responsive --- */
 
+@media (max-width: 768px) {
+/* Menu Behavior */
 .main-nav { display: none; }
 .nav-list {
 display: none; flex-direction: column; position: absolute;
@@ -363,14 +399,18 @@ padding: 20px 0; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 .nav-list.active { display: flex; }
 .hamburger-menu { display: flex; }
 
+/* Text & Logo Scaling */
 .logo-text { width: 40px; height: 40px; }
 .hero-content h1 { font-size: 2.5rem; }
 .hero-content p { font-size: 1rem; }
 h1 { font-size: 2rem; }
 
 
+
+/* Stack Images and Buttons */
 .image-row, .discover-buttons { flex-direction: column; }
 .image-row img { width: 100%; }
 
+/* Heading Resizing */
 h2, .stall-category h3, .info-card h2 { font-size: 2rem; }
 }

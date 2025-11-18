@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/about.js"></script>
     <title>About Us - Munch & Makers Farmers Market</title>
 </head>
 <body>
 
     <header class="main-header">
-        <div class="header-container">
-            <a href="index.html" class="logo-link">
-                <div class="logo-text">M&M</div>
+    <div class="header-container">
+        <a href="index.html" class="logo-link">
+            <div class="logo-text">M&M</div>
+        </a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home Page</a></li>
+                <li class="nav-item"><a href="About Us.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="Browse our stalls.html" class="nav-link">Browse our stalls</a></li>
+                <li class="nav-item"><a href="Community & Groups.html" class="nav-link">Community & groups </a></li>
+                <li class="nav-item"><a href="News & Events.html" class="nav-link">News & Events</a></li>
+                <li class="nav-item"><a href="Become a vendor.html" class="nav-link">Become a Vendor</a></li>
+                <li class="nav-item"><a href="Contact Us.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#" class="cart-link">
+                <span class="cart-icon">🛒</span>
             </a>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home Page</a></li>
-                    <li><a href="About Us.html" class="nav-link">About Us</a></li>
-                    <li><a href="Browse our stalls.html" class="nav-link">Browse our stalls</a></li>
-                    <li><a href="Community & Groups.html" class="nav-link">Community & groups</a></li>
-                    <li><a href="News & Events.html" class="nav-link">News & Events</a></li>
-                    <li><a href="Become a vendor.html" class="nav-link">Become a Vendor</a></li>
-                    <li><a href="Contact Us.html" class="nav-link">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="header-icons">
-                <a href="#" class="cart-link">
-                    <span class="cart-icon">🛒</span>
-                </a>
-                <div class="hamburger-menu">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
     
     <section class="hero-section" style="background-image: url('Images/localn.webp');">
         <div class="hero-content">
@@ -114,15 +115,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navList = document.querySelector('.nav-list');
-        const headerIcons = document.querySelector('.header-icons');
-
-        hamburger.addEventListener('click', () => {
-            navList.classList.toggle('active');
-            headerIcons.classList.toggle('active');
-        });
-    </script>
+    
+        <script src="JavaScript/about.js"></script>
 </body>
 </html>
