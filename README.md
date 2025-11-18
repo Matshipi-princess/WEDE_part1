@@ -36,7 +36,11 @@ js/about.js, js/vendor.js, js/stalls.js, js/community.js, js/contact.js, js/news
 Added cart counting functionality that increments a persistent counter (stored in localStorage) when "Add to Basket" buttons are clicked on the Browse Our Stalls page, displaying a badge (e.g., 🛒 (3)) next to the cart icon across all pages. Fixed newsletter form submission to prevent page jumps, validate email inputs, and show a popup message ("Email address received") instead of reloading the page. This resolves user experience issues with jumping and provides immediate feedback, enhancing usability and meeting requirements for dynamic content and form processing. -: All js/*.js files (newsletter and cart code added to each); CSS files for cart badge styling.
 
 -Modified CSS to center-align the "upcoming artisans" sections (.coming-soon-card and .coming-soon-image-card) on the Browse Our Stalls page using margin: 0 auto and text-align: center for better visual balance. Added custom styling for the search input and "Load More Products" button to match the site's design (e.g., center-alignment, rounded corners, colors), ensuring consistency with "Add to Basket" buttons. Also included cart badge CSS for the counter display. These changes improve mobile responsiveness and design coherence, addressing feedback on layout and aesthetics.
+REFERENCES 
+UCOOK (2025). Meal Kits & Meal Delivery Service South Africa. [Online]. Available at: https://www.ucook.co.za/
+4 Ways Farmers Market (2025). [Online]. Available at: https://www.google.com/search?q=https://4waysfarmersmarket.co.za/ 
+Ellis, M. (2025) ‘How to Create an Interactive Map for a Website (4 Easy Methods)’, HostAdvice Blog, 19 September. Available at: https://hostadvice.com/blog/creating-a-website/create-an-interactive-map-for-a-website/
 
-CSS/book.css (or equivalent); Browse our stalls.html for element classes.
+
 
 Resolved JavaScript redeclaration errors by providing complete, non-duplicated code for all pages. Ensured all scripts load without conflicts, and added fallback handling for forms and maps. Updated HTML headers where needed for hamburger menu elements. This improves code reliability and prevents runtime errors, contributing to a polished final product.
